@@ -1,0 +1,641 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  display: block;
+}
+
+.mainContain .head {
+  background-color: cadetblue;
+}
+.mainContain .head .navbar {
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
+}
+.mainContain .head .navbar .navbar-brand .site {
+  cursor: pointer;
+  color: azure;
+  font-family: KGBlankSpaceSolid;
+}
+.mainContain .head .navbar .navbar-nav #btnLogIn {
+  font-size: 1.5em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.mainContain .show #continents .carousel-inner .carousel-item .img-fluid {
+  height: 770px;
+}
+.mainContain .sentence {
+  padding: 15px;
+  height: 100px;
+  opacity: 0.6;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+.mainContain .sentence .citation {
+  text-align: center;
+  font-size: 1.4em;
+  color: azure;
+  font-family: KGBlankSpaceSketch;
+}
+.mainContain .sentence #btnDestination {
+  width: 200px;
+  margin-right: 10px;
+  margin-left: 15px;
+  color: azure;
+  font-family: KGBlankSpaceSolid;
+  background-color: cadetblue;
+  border: 2px solid azure;
+  transition: all 0.25ms ease;
+}
+.mainContain .sentence #btnDestination:hover {
+  transform: scale(1.1);
+  background-color: black;
+}
+.mainContain .footer {
+  height: 57px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+}
+.mainContain .footer .copyrigth {
+  font-size: 1.4em;
+  margin-top: 17px;
+  margin-left: 10px;
+  font-family: KGBlankSpaceSolid;
+}
+.mainContain .footer #btnContact {
+  padding: 3px;
+  font-size: 1.3em;
+  margin-right: 15px;
+  font-family: RifficFreeBold;
+  border: 3px solid black;
+  background-color: transparent;
+}
+.mainContain .footer #btnContact:hover {
+  color: azure;
+  background-color: black;
+}
+
+.destinationsContain .head {
+  background-color: cadetblue;
+}
+.destinationsContain .head .navbar {
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
+}
+.destinationsContain .head .navbar .navbar-brand .site {
+  cursor: pointer;
+  color: azure;
+  font-family: KGBlankSpaceSolid;
+}
+.destinationsContain .head .navbar .navbar-nav #btnLogIn {
+  font-size: 1.5em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.destinationsContain .destinations {
+  padding-top: 10px;
+  padding-bottom: 7px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/picts/destinationsBackground.jpg");
+}
+.destinationsContain .destinations .choose {
+  letter-spacing: 3px;
+  color: azure;
+  margin-top: 15px;
+  text-align: center;
+  font-family: RifficFreeBold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 black, 0px -2px 0 black;
+}
+.destinationsContain .destinations .row {
+  padding: 15px;
+  margin: -15px auto;
+  margin-bottom: 25px;
+}
+.destinationsContain .destinations .row .col-lg-3 .img-fluid {
+  cursor: pointer;
+  height: 310px;
+  max-width: 650px;
+  border-radius: 17px;
+  margin-top: 25px;
+  border: 2px solid black;
+  transition: all 0.25ms ease;
+}
+.destinationsContain .footer {
+  height: 57px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+}
+.destinationsContain .footer .copyrigth {
+  font-size: 1.4em;
+  margin-top: 17px;
+  margin-left: 10px;
+  font-family: KGBlankSpaceSolid;
+}
+.destinationsContain .footer #btnContact {
+  padding: 3px;
+  font-size: 1.3em;
+  margin-right: 15px;
+  font-family: RifficFreeBold;
+  border: 3px solid black;
+  background-color: transparent;
+}
+.destinationsContain .footer #btnContact:hover {
+  color: azure;
+  background-color: black;
+}
+
+.countryContain .head {
+  background-color: cadetblue;
+}
+.countryContain .head .navbar {
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
+}
+.countryContain .head .navbar .navbar-brand .site {
+  cursor: pointer;
+  color: azure;
+  font-family: KGBlankSpaceSolid;
+}
+.countryContain .head .navbar .navbar-nav #btnLogIn {
+  font-size: 1.5em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.countryContain .details {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  padding: 20px;
+}
+.countryContain .details .row {
+  padding: 35px;
+}
+.countryContain .details .row .col-lg-5 .img-fluid {
+  height: 375px;
+  max-width: 750px;
+  border-radius: 10px;
+  border: 0px solid black;
+}
+.countryContain .details .row .col-lg-7 {
+  padding-top: 10px;
+}
+.countryContain .details .row .col-lg-7 .where {
+  font-size: 1.5em;
+  text-align: center;
+  color: azure;
+  font-family: KGBlankSpaceSolid;
+}
+.countryContain .details .row .col-lg-7 .describe {
+  font-size: 1.4em;
+  font-family: KGBlankSpaceSketch;
+  color: azure;
+}
+.countryContain .details .listCity {
+  margin-top: -20px;
+}
+.countryContain .details .listCity .choose {
+  font-size: 2em;
+  color: azure;
+  text-align: center;
+  font-family: KGBlankSpaceSolid;
+}
+.countryContain .details .listCity .row {
+  margin-top: -20px;
+  margin-bottom: -20px;
+  padding-bottom: -10px;
+}
+.countryContain .details .listCity .row .col-lg-4 {
+  margin-bottom: 30px;
+}
+.countryContain .details .listCity .row .col-lg-4 .img-fluid {
+  cursor: pointer;
+  height: 300px;
+  opacity: 0.7;
+  max-width: 550px;
+  border-radius: 40px;
+  border: 1px solid azure;
+}
+.countryContain .details .listCity .row .col-lg-4 .img-fluid:hover {
+  opacity: 1;
+}
+.countryContain .footer {
+  height: 57px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+}
+.countryContain .footer .copyrigth {
+  font-size: 1.4em;
+  margin-top: 17px;
+  margin-left: 10px;
+  font-family: KGBlankSpaceSolid;
+}
+.countryContain .footer #btnContact {
+  padding: 3px;
+  font-size: 1.3em;
+  margin-right: 15px;
+  font-family: RifficFreeBold;
+  border: 3px solid black;
+  background-color: transparent;
+}
+.countryContain .footer #btnContact:hover {
+  color: azure;
+  background-color: black;
+}
+
+.connectContain {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/logInWallpaper.jpg");
+}
+.connectContain #btnClose {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  font-size: 2em;
+  color: black;
+  border: transparent;
+  background: transparent;
+  transition: all 0.25ms ease;
+}
+.connectContain #btnClose:hover {
+  color: azure;
+}
+.connectContain .cardConnect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  padding: 10px;
+}
+.connectContain .cardConnect .logIn {
+  color: azure;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-family: KGBlankSpaceSolid;
+  text-align: center;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+}
+.connectContain .cardConnect .form-area {
+  margin-top: -35px;
+}
+.connectContain .cardConnect .form-area form .formGroupOne {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  flex-direction: row;
+}
+.connectContain .cardConnect .form-area form .formGroupOne input {
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  font-family: RifficFreeBold;
+}
+.connectContain .cardConnect .form-area form #btnConnect {
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+  height: 42.5px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-family: RifficFreeBold;
+  color: azure;
+  letter-spacing: 1px;
+  background-color: darkgreen;
+}
+.connectContain .cardConnect .hrefInscribe {
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: KGBlankSpaceSolid;
+  color: azure;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+}
+.connectContain .cardConnect .hrefInscribe a {
+  text-decoration: none;
+  color: azure;
+  transition: all 0.25ms ease;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+}
+.connectContain .cardConnect .hrefInscribe a:hover {
+  color: black;
+  text-shadow: 2px 2px 0 azure, 2px -2px 0 azure, -2px 2px 0 azure, -2px -2px 0 azure, 2px 0px 0 azure, 0px 2px 0 azure, -2px 0px 0 azure, 0px -2px 0 azure;
+}
+
+.inscribeContain {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/signUpWallaper.jpg");
+}
+.inscribeContain #btnClose {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  font-size: 2em;
+  color: black;
+  border: transparent;
+  background: transparent;
+  transition: all 0.25ms ease;
+}
+.inscribeContain #btnClose:hover {
+  color: azure;
+}
+.inscribeContain .cardInscribe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1200px;
+}
+.inscribeContain .cardInscribe .signUp {
+  color: azure;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-family: KGBlankSpaceSolid;
+  text-align: center;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+}
+.inscribeContain .cardInscribe .form-area {
+  margin: -30px auto;
+}
+.inscribeContain .cardInscribe .form-area form .formGroupOne, .inscribeContain .cardInscribe .form-area form .formGroupTwo {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  flex-direction: row;
+}
+.inscribeContain .cardInscribe .form-area form .formGroupOne .form-group input, .inscribeContain .cardInscribe .form-area form .formGroupTwo .form-group input {
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  font-family: RifficFreeBold;
+}
+.inscribeContain .cardInscribe .form-area form #btnInscribe {
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+  height: 42.5px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-family: RifficFreeBold;
+  color: azure;
+  letter-spacing: 2px;
+  background-color: darkgreen;
+}
+.inscribeContain .cardInscribe .hrefConnect {
+  margin-top: 40px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: KGBlankSpaceSolid;
+  color: azure;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+}
+.inscribeContain .cardInscribe .hrefConnect a {
+  text-decoration: none;
+  color: azure;
+  transition: all 0.25ms ease;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+}
+.inscribeContain .cardInscribe .hrefConnect a:hover {
+  color: black;
+  text-shadow: 2px 2px 0 azure, 2px -2px 0 azure, -2px 2px 0 azure, -2px -2px 0 azure, 2px 0px 0 azure, 0px 2px 0 azure, -2px 0px 0 azure, 0px -2px 0 azure;
+}
+
+#contact .modal-dialog .modal-content {
+  border-radius: 10px;
+  border: 0px solid cadetblue;
+  background-color: cadetblue;
+}
+#contact .modal-dialog .modal-content #btnCloseModal {
+  position: relative;
+  top: 9%;
+  left: 95%;
+  transform: translate(-50%, 0%);
+  color: azure;
+  font-size: 1.6em;
+  border: transparent;
+  background: transparent;
+}
+#contact .modal-dialog .modal-content .modal-body {
+  padding-bottom: 48px;
+  margin: -25px auto;
+}
+#contact .modal-dialog .modal-content .modal-body h2 {
+  letter-spacing: 3px;
+  font-size: 2.1em;
+  padding-top: 5px;
+  text-align: center;
+  font-family: RifficFreeBold;
+  color: azure;
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+}
+#contact .modal-dialog .modal-content .modal-body .form-area {
+  margin: -20px auto;
+}
+#contact .modal-dialog .modal-content .modal-body .form-area form .formGroupOne {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  display: flex;
+  flex-direction: row;
+}
+#contact .modal-dialog .modal-content .modal-body .form-area form #btnSend {
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-family: KGBlankSpaceSketch;
+  color: azure;
+  letter-spacing: 1px;
+  background-color: darkgreen;
+}
+
+@font-face {
+  font-family: KGBlankSpaceSolid;
+  src: url("/assets/fonts/KGBlankSpaceSolid.ttf");
+}
+@font-face {
+  font-family: KGBlankSpaceSketch;
+  src: url("/assets/fonts/KGBlankSpaceSketch.ttf");
+}
+@font-face {
+  font-family: RifficFreeBold;
+  src: url("/assets/fonts/RifficFreeBold.ttf");
+}
+@media screen and (max-width: 1440px) {
+  .countryContain .details .row .col-lg-5 .img-fluid {
+    height: 460px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mainContain .sentence {
+    height: 150px;
+  }
+  .mainContain .sentence .citation {
+    margin-top: -10px;
+  }
+  .countryContain .details .row .col-lg-5 .img-fluid {
+    height: 340px;
+  }
+  .countryContain .details .row .col-lg-7 .describe {
+    overflow: auto;
+    max-height: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainContain .sentence {
+    height: 150px;
+  }
+  .mainContain .sentence #btnDestination {
+    margin-top: 20px;
+    height: 70px;
+  }
+  .countryContain .details .row .col-lg-5 .img-fluid {
+    height: 440px;
+  }
+  .countryContain .details .row .col-lg-7 .describe {
+    overflow: auto;
+    text-align: center;
+    max-height: 250px;
+  }
+  .countryContain .details .listCity .row .col-lg-4 .img-fluid {
+    margin: auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainContain .sentence {
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainContain .sentence #btnDestination {
+    display: block;
+    margin: auto;
+    max-width: 150px;
+  }
+  .connectContain .cardConnect {
+    transform: translate(-50%, -50%);
+  }
+  .connectContain .cardConnect .logIn {
+    font-size: 1.6em;
+  }
+  .connectContain .cardConnect .form-area form .formGroupOne {
+    margin-top: 10px;
+  }
+  .connectContain .cardConnect .form-area form .formGroupOne input {
+    width: 190px;
+  }
+  .countryContain .details .row .col-lg-5 .img-fluid {
+    height: 440px;
+  }
+  .countryContain .details .listCity .row .col-lg-4 .img-fluid {
+    margin: auto;
+    display: block;
+  }
+  .countryContain .details .listCity .row .col-lg-4 .cityFirst {
+    left: 27%;
+  }
+  .countryContain .details .listCity .row .col-lg-4 .citySecond {
+    left: 29%;
+  }
+  .countryContain .details .listCity .row .col-lg-4 .cityThird {
+    left: 36%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mainContain .sentence {
+    height: 360px;
+  }
+  .connectContain .cardConnect {
+    transform: translate(-50%, -50%);
+  }
+  .connectContain .cardConnect .logIn {
+    font-size: 1.6em;
+  }
+  .connectContain .cardConnect .form-area form .formGroupOne {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 30px;
+    flex-direction: column;
+  }
+  .connectContain .cardConnect .form-area form .formGroupOne input {
+    width: 190px;
+  }
+  .connectContain .cardConnect .form-area form .formGroupOne .alert {
+    max-width: 190px;
+  }
+  .connectContain .cardConnect .form-area #btnConnect {
+    height: 55px;
+    min-width: 240px;
+  }
+  .connectContain .cardConnect .hrefInscribe {
+    margin-top: 20px;
+  }
+  .inscribeContain .cardInscribe .form-area form .formGroupOne, .inscribeContain .cardInscribe .form-area form .formGroupTwo {
+    display: flex;
+    flex-direction: column;
+  }
+  .countryContain .details .row .col-lg-5 .img-fluid {
+    height: 440px;
+  }
+  .countryContain .details .listCity .choose {
+    font-size: 1.5em;
+    margin-bottom: -5px;
+  }
+  .countryContain .details .listCity .row .col-lg-4 .img-fluid {
+    margin: auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 325px) {
+  .mainContain .sentence {
+    height: 390px;
+  }
+  .countryContain .details .row .col-lg-5 .img-fluid {
+    height: 300px;
+  }
+  .countryContain .details .listCity .choose {
+    font-size: 1.6em;
+    margin-bottom: -5px;
+  }
+  .countryContain .details .listCity .row .col-lg-4 .img-fluid {
+    height: 270px;
+  }
+}/*# sourceMappingURL=styles.css.map */
